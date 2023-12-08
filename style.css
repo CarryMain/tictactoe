@@ -1,0 +1,53 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.board {
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+
+.cell {
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    gap: 30px;
+}
+
+.bottom > button {
+    width: 70px;
+    height: 20px;
+}
+
+button:active {
+    transform: scale(0.94);
+}
